@@ -70,3 +70,146 @@ main{
     margin-left: 10px;
 }
 /* header style end */
+/* player style  start*/
+.players{
+    width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 30px; 
+}
+.player{
+    width: 330px;
+    height: 474px; 
+    box-shadow:0 0 40px rgba(105, 105, 105, 0.15);
+    border-radius: 10px;
+}
+.player-photo img{
+    width: 300px;
+    padding: 15px;
+}
+.player-detail{
+    margin: 15px;
+}
+.player-detail h1{
+    font-size: 28px;
+    color: #18191F;
+}
+.player-detail p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+/* player style end */
+/* team style start*/
+.team-title{
+    text-align: center;
+    margin-top: 50px;
+}
+.team-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.team-player{
+    overflow: hidden;
+}
+.team-player img{
+        width: 300px;
+        
+}
+.team-player:hover img{
+    transform: scale(1.3);
+    transition: transform 5s ease;
+    overflow: hidden;
+}
+/* team style end */
+/* fainal team  */
+.fainal-teams{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rebeccapurple; */
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 50% 50% 10px 10px;
+}
+.team-leader-photo img{
+    width: 300px;
+    border-radius: 50%;
+}
+.vrset{
+    margin: 0 30px;
+}
+.vrset h1{
+    font-size: 50px;
+}
+/* hightlit style  start*/
+.highlights{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 165px;
+}
+.highlight-detail{
+    width: 470px;
+    margin: 100px 0;
+}
+.highlight-detail h1{
+    color:  #0A0826;
+    font-size: 48px;
+}
+.highlight-detail p{
+    color:  #6C6C6C;
+    font-size: 16px; 
+}
+.highlight-photo img{
+    width: 567px;
+}
+/* hightlit style end */
+/* footer style  start*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 158px;
+    margin-bottom: 63px;
+}
+.footer-logo img{
+    width: 483px;
+} 
+.fa-bg{ 
+    margin: 14px; 
+}
+/* footer style end */
+
+/* Responsive by media query style */
+/* mobile responsive */
+@media only screen and (max-width:688px) {
+    section{
+        width: 100%;
+    }
+    .menu nav ul,.header-banner, .fainal-teams, .highlights{
+        flex-direction: column;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px){
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu nav ul,.highlights{
+        flex-direction: column;
+    }
+}
